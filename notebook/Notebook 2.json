@@ -1,0 +1,66 @@
+{
+	"name": "Notebook 2",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "python",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "17d04b61-a890-4417-9031-d26af51720bb"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/79bca21f-f9f8-494b-8113-61c6b4c7fab3/resourceGroups/cde-rg-cus-capture-01/providers/Microsoft.Synapse/workspaces/eventhubcapture/bigDataPools/python",
+				"name": "python",
+				"type": "Spark",
+				"endpoint": "https://eventhubcapture.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/python",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.3",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					" %run Notebook 1 { \"routeNumber\":\"2000155249\", \"date\":\"2023/11/29\", \"time\":\"19/57/26\"}\r\n",
+					" "
+				],
+				"execution_count": 11
+			}
+		]
+	}
+}
