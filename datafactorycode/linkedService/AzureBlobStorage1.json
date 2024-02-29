@@ -4,8 +4,8 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"serviceEndpoint": "https://cdestgcusdltms01.blob.core.windows.net/",
-			"accountKind": "BlockBlobStorage"
+			"serviceEndpoint": "https://poceventcapture.blob.core.windows.net/",
+			"accountKind": "StorageV2"
 		}
 	}
 }
